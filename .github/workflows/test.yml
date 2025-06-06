@@ -22,10 +22,10 @@ jobs:
           node-version: 20
 
       - name: Install Dependencies
-        working-directory: express-tests/
+        working-directory: .
         run: pnpm i && npx prisma generate
 
       - name: Run tests
-        working-directory: express-tests/
+        working-directory: .
         run: pnpm run test
         
